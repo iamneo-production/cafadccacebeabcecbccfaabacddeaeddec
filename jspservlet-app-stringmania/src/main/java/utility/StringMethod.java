@@ -1,4 +1,4 @@
-// package utility;
+package utility;
 import net.java.swingfx.waitwithstyle.InfiniteProgressAdapter;
 
 public class StringMethod {
