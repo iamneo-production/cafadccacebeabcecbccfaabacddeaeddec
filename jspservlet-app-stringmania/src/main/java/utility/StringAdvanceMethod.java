@@ -1,43 +1,45 @@
 package utility;
 
-public class StringAdvanceMethod {
-	//Enter the code here...
-	private String input1;
-	private String input2;
-	public String getInput1() {
-		return input1;
-	}
-	public void setInput1(String input1) {
-		this.input1 = input1;
-	}
-	public String getInput2() {
-		return input2;
-	}
-	public void setInput2(String input2) {
-		this.input2 = input2;
-	}
-	public String concat(String one, String two){
-		return one.concat(two);
-	}
-	public String split(String one, String two){
-		int s = 0;
-		int e = one.indexOf(two);
-		String result = "";
-
-		while(e != -1){
-			String sub = one.substring(s,e);
-			result = result + sub + " ";
-			s = e + two.length();
-			e = one.indexOf(two, s);
-		}
-		String last = one.substring(s);
-
-		return result+last;
-	}
-	public String indexOf(String one, String two) {
-		return Integer.toString(one.indexOf(two));
-	}
-	public String trim(String str){
-		return str.trim();
-	}
+public class StringAdvanceMethod{
+    private String Input1;
+    private String Input2;
+    
+    public String getInput1(){
+        return this.Input1;
+    }
+    public void setInput1(String Input1){
+        this.Input1 = Input1;
+    }
+    public String getInput2(){
+        return this.Input2;
+    }
+    public void setInput2(String Input2){
+        this.Input2 = Input2;
+    }
+    
+    //Method to concatenate two strings
+    public String concat(String a,String b){
+        return a + b;
+    }
+    
+    //Method to split two strings
+    public String split(String a,String b){
+        String[] s = a.split(b);
+        return s[0]+" "+s[1];
+    }
+    
+    //Method to find the first character in the string
+    public String firstChar(){
+        return String.valueOf(this.Input1.charAt(0));
+    }
+    
+    //Method to find the indexOf the string
+    public String indexOf(String a,String b){
+        return String.valueOf(a.indexOf(b));
+    }
+    
+    //Method to trim the input string
+    public String trimString(){
+        return this.Input1.trim();
+    }
 }
