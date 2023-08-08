@@ -24,7 +24,7 @@ public class StringBoolean {
         return input1.startsWith(input2);
     }
 
-    public boolean equals(String input1, String input2) {
+    public boolean equals(getInput1(), getInput2()) {
         return input1.equals(input2);
     }
 
